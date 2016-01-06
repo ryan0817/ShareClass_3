@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>小世代公司請假系統</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        
+.red{
+    color:red;
+    }
+.form-area
+{
+    background-color: #FAFAFA;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: 1px solid GREY;
+	}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- 程式從這裡開始撰寫 -->
+    <script type="text/javascript">
+        
+    </script>
+    <!-- 程式在這裡結束 -->
+
+</head>
+<body>
+<div class="container">
+<div class="col-md-5">
+    <div class="form-area">  
+        <form role="form">
+        <br style="clear:both">
+                    <h3 style="margin-bottom: 25px; text-align: center;">小世代請假系統</h3>
+    				<div class="form-group">
+						<input type="text" class="form-control" id="name" name="name" placeholder="申請人名字" required>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="leaveDays" name="leaveDays" placeholder="請假天數" required>
+					</div>
+                    <span class="help-block"><p id="message" class="help-block "></p></span>                    
+            
+        <button onclick="send()" type="button" id="submit" name="submit" class="btn btn-primary pull-right" >送出申請單</button>
+        </form>
+    </div>
+</div>
+</div>
+</body>
+</html>
